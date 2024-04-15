@@ -42,9 +42,23 @@ cp .env.example .env
    - `EMAIL_HOST_USER`: your email
    - `EMAIL_HOST_PASSWORD`: your App Password (you can create it in Google 2-Step Verification settings)
 
+## Migrations
+
+Before running the project, make sure to apply migrations:
+
+```bash
+python manage.py makemigrations
+```
+
+```bah
+python manage.py migrate
+```
+
+This will create necessary database tables based on your Django models.
+
 ## Running the Project
 
-Once dependencies and environment variables are set up, you can run the project using the following commands:
+Once dependencies, environment variables, and migrations are set up, you can run the project using the following commands:
 
 1. Start Django development server:
 
